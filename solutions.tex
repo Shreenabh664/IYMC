@@ -1,0 +1,56 @@
+\documentclass{article}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\section*{Solution A.1}
+Solving for $g(x)$=$h(x)$,
+$$2x-5=\frac{8}{x}+10$$
+Multiply by $x$, ($x\neq0$)
+
+\begin{align*}
+2x^2-15x-8&=0 \\
+2x^2-16x+x-8&=0 \\
+2x(x-8)+1(x-8)&=0\\
+(2x+1)(x-8)&=0
+\end{align*}
+$$\boxed{x=8, x=-\frac{1}{2}}$$
+$f\left(-\frac{1}{2}\right)$ is irrational while $g\left(-\frac{1}{2}\right)$ and $h\left(-\frac{1}{2}\right)$ are rational. Hence, they cannot be equal.
+
+\begin{align*}
+    f(8)&=2^{8-5}+3=11, \\
+    g(8)&=2\times8-5=11, \\
+    h(8)&=\frac{8}{8}+10=11
+\end{align*}
+$\therefore$ (8,11) is the only point where $f(x), g(x), h(x)$ have the same value.
+
+\newpage
+\section*{Solution A.2}
+Let $5^{2x}-6$ be $t$. We have:
+\begin{align*}
+    t^2-t-12&=0 \\
+    t^2-4t+3t-12&=0 \\
+    t(t-4)+3(t-4)&=0 \\
+    (t+3)(t-4)&=0
+\end{align*}
+$$\boxed{t=-3, t=4}$$
+\subsection*{Case I}
+Let $t=-3$,
+\begin{align*}
+    5^{2x}-6&=-3 \\
+    5^{2x}&=3 \\
+    2x &= \log_5{3} \\
+    x &= \frac{1}{2}\log_5{3}
+\end{align*}
+\subsection*{Case II}
+Ler $t=4$,
+\begin{align*}
+    5^{2x}-6&=4 \\
+    5^{2x}&=10 \\
+    2x&=\log_5{10} \\
+    x&=\frac{1}{2}\log_5{10}
+\end{align*}
+$$\boxed{x=\frac{1}{2}\log_5{3}, \frac{1}{2}\log_5{10}}$$
+\end{document}
