@@ -5,6 +5,11 @@
 \usepackage{amssymb}
 
 \begin{document}
+\section*{Problem A.1}
+Find all points $(x, y)$ where the functions $f(x), g(x), h(x)$ have the same value:
+$$
+f(x)=2^{x-5}+3, \quad g(x)=2 x-5, \quad h(x)=\frac{8}{x}+10
+$$
 \section*{Solution A.1}
 Solving for $g(x)$=$h(x)$,
 $$2x-5=\frac{8}{x}+10$$
@@ -27,6 +32,8 @@ $f\left(-\frac{1}{2}\right)$ is irrational while $g\left(-\frac{1}{2}\right)$ an
 $\therefore$ (8,11) is the only point where $f(x), g(x), h(x)$ have the same value.
 
 \newpage
+\section*{Problem A.2}
+Determine the roots of the function $f(x)=\left(5^{2 x}-6\right)^{2}-\left(5^{2 x}-6\right)-12$.
 \section*{Solution A.2}
 Let $5^{2x}-6$ be $t$. We have:
 \begin{align*}
@@ -45,7 +52,7 @@ Let $t=-3$,
     x &= \frac{1}{2}\log_5{3}
 \end{align*}
 \subsection*{Case II}
-Ler $t=4$,
+Let $t=4$,
 \begin{align*}
     5^{2x}-6&=4 \\
     5^{2x}&=10 \\
@@ -53,4 +60,75 @@ Ler $t=4$,
     x&=\frac{1}{2}\log_5{10}
 \end{align*}
 $$\boxed{x=\frac{1}{2}\log_5{3}, \frac{1}{2}\log_5{10}}$$
+
+\newpage
+\section*{Problem A.3}
+Find the derivative $f_{m}^{\prime}(x)$ of the following function with respect to $x$ :
+$$
+f_{m}(x)=\left(\sum_{n=1}^{m} n^{x} \cdot x^{n}\right)^{2}
+$$
+\section*{Solution A.3}
+By chain rule of derivatives we have,
+$$f(g(x))=f'(g(x))g'(x)$$
+\begin{align*}
+    f_m(x)&=\left(\sum\limits_{n=1}^{m}n^x\cdot x^n\right)^2 \\
+    f'_m(x)&=2\left(\sum\limits_{n=1}^{m}n^x\cdot x^n\right)\left(\sum\limits_{n=1}^{m}n^x\cdot x^n\right)'
+\end{align*}
+Now by product rule of derivatives we have,
+\[\left(f(x)g(x)\right)'=f'(x)g(x)+f(x)g'(x)\]
+\[f'_m(x)=2\left(\sum_{n=1}^{m}n^x\cdot x^n\right)\left(\sum_{n=1}^{m} \left(n^x \cdot x^n \cdot \ln(n) + n^{x+1}x^{n-1}\right)\right)\]
+\[\boxed{f'_m(x)=2\left(\sum_{n=1}^{m}n^x\cdot x^n\right)\left(\sum_{n=1}^{m}n^x \cdot x^{n-1} (x \ln(n)+n)\right)}\]
+
+\newpage
+\section*{Problem A.4}
+Find at least one solution to the following equation:
+$$
+\frac{\sin \left(x^{2}-1\right)}{1-\sin \left(x^{2}-1\right)}=\sin (x)+\sin ^{2}(x)+\sin ^{3}(x)+\sin ^{4}(x)+\cdots
+$$
+\section*{Solution A.4}
+As $|\sin(x)| \leq 1$, R.H.S. can be written as sum of infinite geometric progression as:
+\[\frac{\sin(x^{2}-1)}{1-\sin(x^{2}-1)}=\frac{\sin(x)}{1-\sin(x)}\]
+One solution can be (in principal interval):
+\begin{align*}
+    \sin(x^{2}-1)&=\sin(x) \\
+    x^{2}-1&=x
+\end{align*}
+Where, $-\pi \leq x^{2}-1 \leq \pi \implies x \in [-\sqrt{\pi+1}, \sqrt{\pi+1}]$,
+\[x^2-x-1=0\]
+By quadratic formula,
+$x=\frac{1\pm \sqrt{1+4}}{2} \implies \frac{1-\sqrt{5}}{2}$
+This satisfies the initial conditions also. Thus we have,
+\[\boxed{x=\frac{1-\sqrt{5}}{2}}\]
+
+\newpage
+\section*{Problem B.1}
+Consider the following sequence of successive numbers of the $2^{k}$ -th power:
+$$
+1,2^{2^{k}}, 3^{2^{k}}, 4^{2^{k}}, 5^{2^{k}}, \ldots
+$$
+Show that the difference between the numbers in this sequence is odd for all $k \in \mathbb{N}$.
+\section*{Solution B.1}
+Natural powers of odd numbers are odd and natural powers of even numbers are even. This is because raising a number to its power does not introduce/remove new factors of 2. Hence parity is retained. This applies to $2^{k}$-th powers too. \\
+Thus, the sequence will be like:
+\[1, even, odd, even, odd, even, \ldots\]
+Here, as we can observe, difference of two consecutive terms is always odd. This is because:
+\[even-odd = odd\]
+\[odd-even = odd\]
+Hence proved, the difference between the numbers in this sequence is odd for all $k \in \mathbb{N}$.
+
+\newpage
+\section*{Problem B.2}
+Prove this identity between two infinite sums (with $x \in \mathbb{R}$ and $n !$ stands for factorial):
+$$
+\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)^{2}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}
+$$
+\section*{Solution B.2}
+We know the Taylor series expansion:
+\[e^{x}=\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n !}\right)\]
+Squaring both sides we have,
+\[e^{2x}=\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n !}\right)^{2}\]
+But by replacing $x$ with $2x$ in the original Taylor series expansion, we can write $e^{2x}$ as:
+\[e^{2x}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}\]
+Hence proved:
+\[\boxed{\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)^{2}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}}\]
 \end{document}
