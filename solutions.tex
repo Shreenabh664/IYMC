@@ -1,10 +1,16 @@
 \documentclass{article}
+\author{Shreenabh Agrawal}
+\title{IYMC Pre-Final Round 2020}
 
 
 \usepackage{amsmath}
 \usepackage{amssymb}
 
 \begin{document}
+
+\maketitle
+\newpage
+
 \section*{Problem A.1}
 Find all points $(x, y)$ where the functions $f(x), g(x), h(x)$ have the same value:
 $$
@@ -131,4 +137,24 @@ But by replacing $x$ with $2x$ in the original Taylor series expansion, we can w
 \[e^{2x}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}\]
 Hence proved:
 \[\boxed{\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)^{2}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}}\]
+
+\newpage
+\section*{Problem B.3}
+You have given a function $\lambda: \mathbb{R} \rightarrow \mathbb{R}$ with the following properties $(x \in \mathbb{R}, n \in \mathbb{N})$
+$$
+\lambda(n)=0, \quad \lambda(x+1)=\lambda(x), \quad \lambda\left(n+\frac{1}{2}\right)=1
+$$
+Find two functions $p, q: \mathbb{R} \rightarrow \mathbb{R}$ with $q(x) \neq 0$ for all $x$ such that $\lambda(x)=q(x)(p(x)+1)$
+\section*{Solution B.3}
+In this problem, we make use of the "Fractional Part Function" - \{x\}. \\
+We have $\lambda(n)=0$ and \{n\} = 0 (by definition of F.P.F). So let us designate $q(x)=\{x\}$. \\
+Next, we have $\lambda(x+1)=\lambda(x)$, this implies both $q(x)$ and $p(x)$ are purely composed of $\{x\}+c$ where $c$ is a numerical constant. We have already proved that in $q(x)$, $c=0$. \\
+We are given: $\lambda\left(n+\frac{1}{2}\right)=1$. We also know that, $\left\{n+\frac{1}{2}\right\}=\left\{\frac{1}{2}\right\}$. Hence:
+\begin{align*}
+    \lambda\left(n+\frac{1}{2}\right)&=\left\{n+\frac{1}{2}\right\}\left(\left\{n+\frac{1}{2}\right\}+c+1\right)=1\\
+    \frac{1}{2}\left(\frac{1}{2}+c+1\right)&=1 \\
+    \frac{3}{4}+\frac{c}{2}&=1 \\
+    c&=\frac{1}{2}
+\end{align*}
+\[\boxed{\therefore q(x)=\{x\}, p(x)=\{x\}+0.5}\]
 \end{document}
