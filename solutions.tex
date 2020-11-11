@@ -5,6 +5,9 @@
 
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{siunitx}
 
 \begin{document}
 
@@ -157,4 +160,69 @@ We are given: $\lambda\left(n+\frac{1}{2}\right)=1$. We also know that, $\left\{
     c&=\frac{1}{2}
 \end{align*}
 \[\boxed{\therefore q(x)=\{x\}, p(x)=\{x\}+0.5}\]
+
+\newpage
+\section*{Problem B.4}
+You have given an equal sided triangle with side length $a$. A straight line connects the center of the bottom side to the border of the triangle with an angle of $\alpha .$ Derive an expression for the enclosed area $A(\alpha)$ with respect to the angle (see drawing). \\
+\includegraphics[scale=0.166666]{IM1.png}
+\qquad
+\includegraphics[scale=0.166666]{IM2.png}
+\section*{Solution B.4}
+We do the constructions and labelling as shown (two cases dealt separately).
+\includegraphics[scale=0.25]{IMG1.png}
+\qquad
+\includegraphics[scale=0.26]{IMG2.png}
+\subsection*{Case I}
+In $\Delta DEC$,
+\begin{align*}
+    \tan(\ang{60})&=\frac{EF}{FC}=\frac{h}{p} \\
+    h&=\sqrt{3}p \\
+    \tan(\alpha)&=\frac{EF}{DF} \\
+                &=\frac{h}{\frac{a}{2}-p} \\
+                &=\frac{\sqrt{3}p}{\frac{a}{2}-p} \\
+    \frac{a}{2}\tan(\alpha)-p\tan(\alpha)&=\sqrt{3}p \\
+    \frac{a}{2}\tan(\alpha)&=(\sqrt{3}+\tan(\alpha))p \\
+    p&=\frac{a \tan(\alpha)}{2(\sqrt{3}+\tan(\alpha))} \\
+    \therefore h&= \sqrt{3}p \\
+                &= \frac{\sqrt{3}a \tan{\alpha}}{2(\sqrt{3}+\tan(\alpha))} \\
+    \therefore Ar(\Delta DEC) (=\Delta = A(\alpha)) &= \frac{1}{2} \cdot \frac{a}{2} \cdot h \\
+\end{align*}
+$$\boxed{A(\alpha)=\frac{\sqrt{3} a^{2} \tan(\alpha)}{8 (\sqrt{3}+\tan(\alpha))}}$$
+Note: This result is valid only for $\ang{0} \leq \alpha < \ang{90}$.
+\subsection*{Case II}
+\begin{align*}
+    \alpha + \beta &= \ang{180} \\
+    \Delta + \Delta' &= \frac{\sqrt{3}a^{2}}{4}
+\end{align*}
+From our result in Case-I,
+\[\Delta' = \frac{\sqrt{3} a^2 \tan(\beta)}{8(\sqrt{3}+\tan(\beta))}\]
+Substituting $\beta = \ang{180} - \alpha$,
+\begin{align*}
+    \Delta' &= \frac{\sqrt{3}a^{2}\tan(\ang{180}-\alpha)}{8(\sqrt{3}+\tan(\ang{180}-\alpha))} \\
+            &= \frac{\sqrt{3}a^{2}\tan(\alpha)}{8(\tan(\alpha)-\sqrt{3})}
+\end{align*}
+Using the sum of $\Delta$ and $\Delta'$,
+\begin{align*}
+    \Delta + \frac{\sqrt{3}a^{2}\tan(\alpha)}{8(\tan(\alpha)-\sqrt{3})} &= \frac{\sqrt{3}a^{2}}{4} \\
+    \Delta &= \frac{\sqrt{3}a^2}{4}\left\{1-\frac{\tan(\alpha)}{2(\tan(\alpha)-\sqrt{3})}\right\}
+\end{align*}
+\[\boxed{A(\alpha)=\frac{\sqrt{3}a^2}{8}\cdot \frac{2\sqrt{3}-\tan(\alpha)}{\sqrt{3}-\tan(\alpha)}}\]
+This result is valid only for $\ang{90} < \alpha \leq \ang{180}$.
+\medskip
+
+\noindent
+For $\alpha = \ang{90}$, the shaded area is half of the total area and equal to $\frac{\sqrt{3}a^2}{8}$. This can also be shown by evaluating the limit as $\alpha \rightarrow \ang{90}$ in any of the formulae derived in the cases above.
+\medskip
+
+\noindent
+To sum up,
+\[\boxed{
+    A(\alpha)=
+\begin{dcases}
+    \frac{\sqrt{3}a^2 \tan(\alpha)}{8(\sqrt{3}+\tan(\alpha))},           & \ang{0} \leq \alpha < \ang{90} \\
+    \frac{\sqrt{3}a^2}{8},                                               & \alpha = \ang{90} \\
+    \frac{\sqrt{3}a^2(2\sqrt{3}-\tan(\alpha))}{8(\sqrt{3}-\tan(\alpha)}, & \ang{90} < \alpha \leq \ang{180}
+\end{dcases}
+}
+\]
 \end{document}
