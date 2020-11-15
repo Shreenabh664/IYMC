@@ -16,12 +16,12 @@
 
 \section*{Problem A.1}
 Find all points $(x, y)$ where the functions $f(x), g(x), h(x)$ have the same value:
-$$
+\[
 f(x)=2^{x-5}+3, \quad g(x)=2 x-5, \quad h(x)=\frac{8}{x}+10
-$$
+\]
 \section*{Solution A.1}
 Solving for $g(x)$=$h(x)$,
-$$2x-5=\frac{8}{x}+10$$
+\[2x-5=\frac{8}{x}+10\]
 Multiply by $x$, ($x\neq0$)
 
 \begin{align*}
@@ -30,7 +30,7 @@ Multiply by $x$, ($x\neq0$)
 2x(x-8)+1(x-8)&=0\\
 (2x+1)(x-8)&=0
 \end{align*}
-$$\boxed{x=8, x=-\frac{1}{2}}$$
+\[\boxed{x=8, x=-\frac{1}{2}}\]
 $f\left(-\frac{1}{2}\right)$ is irrational while $g\left(-\frac{1}{2}\right)$ and $h\left(-\frac{1}{2}\right)$ are rational. Hence, they cannot be equal.
 
 \begin{align*}
@@ -42,7 +42,7 @@ $\therefore$ (8,11) is the only point where $f(x), g(x), h(x)$ have the same val
 
 \newpage
 \section*{Problem A.2}
-Determine the roots of the function $f(x)=\left(5^{2 x}-6\right)^{2}-\left(5^{2 x}-6\right)-12$.
+Determine the roots of the function $f(x)={\left(5^{2 x}-6\right)}^{2}-\left(5^{2 x}-6\right)-12$.
 \section*{Solution A.2}
 Let $5^{2x}-6$ be $t$. We have:
 \begin{align*}
@@ -51,7 +51,7 @@ Let $5^{2x}-6$ be $t$. We have:
     t(t-4)+3(t-4)&=0 \\
     (t+3)(t-4)&=0
 \end{align*}
-$$\boxed{t=-3, t=4}$$
+\[\boxed{t=-3, t=4}\]
 \subsection*{Case I}
 Let $t=-3$,
 \begin{align*}
@@ -68,19 +68,19 @@ Let $t=4$,
     2x&=\log_5{10} \\
     x&=\frac{1}{2}\log_5{10}
 \end{align*}
-$$\boxed{x=\frac{1}{2}\log_5{3}, \frac{1}{2}\log_5{10}}$$
+\[\boxed{x=\frac{1}{2}\log_5{3}, \frac{1}{2}\log_5{10}}\]
 
 \newpage
 \section*{Problem A.3}
-Find the derivative $f_{m}^{\prime}(x)$ of the following function with respect to $x$ :
-$$
-f_{m}(x)=\left(\sum_{n=1}^{m} n^{x} \cdot x^{n}\right)^{2}
-$$
+Find the derivative $f_{m}^{\prime}(x)$ of the following function with respect to $x$:
+\[
+f_{m}(x)={\left(\sum_{n=1}^{m} n^{x} \cdot x^{n}\right)}^{2}
+\]
 \section*{Solution A.3}
 By chain rule of derivatives we have,
-$$f(g(x))=f'(g(x))g'(x)$$
+\[f(g(x))=f'(g(x))g'(x)\]
 \begin{align*}
-    f_m(x)&=\left(\sum\limits_{n=1}^{m}n^x\cdot x^n\right)^2 \\
+    f_m(x)&={\left(\sum\limits_{n=1}^{m}n^x\cdot x^n\right)}^2 \\
     f'_m(x)&=2\left(\sum\limits_{n=1}^{m}n^x\cdot x^n\right)\left(\sum\limits_{n=1}^{m}n^x\cdot x^n\right)'
 \end{align*}
 Now by product rule of derivatives we have,
@@ -91,9 +91,9 @@ Now by product rule of derivatives we have,
 \newpage
 \section*{Problem A.4}
 Find at least one solution to the following equation:
-$$
+\[
 \frac{\sin \left(x^{2}-1\right)}{1-\sin \left(x^{2}-1\right)}=\sin (x)+\sin ^{2}(x)+\sin ^{3}(x)+\sin ^{4}(x)+\cdots
-$$
+\]
 \section*{Solution A.4}
 As $|\sin(x)| \leq 1$, R.H.S. can be written as sum of infinite geometric progression as:
 \[\frac{\sin(x^{2}-1)}{1-\sin(x^{2}-1)}=\frac{\sin(x)}{1-\sin(x)}\]
@@ -112,9 +112,9 @@ This satisfies the initial conditions also. Thus we have,
 \newpage
 \section*{Problem B.1}
 Consider the following sequence of successive numbers of the $2^{k}$ -th power:
-$$
+\[
 1,2^{2^{k}}, 3^{2^{k}}, 4^{2^{k}}, 5^{2^{k}}, \ldots
-$$
+\]
 Show that the difference between the numbers in this sequence is odd for all $k \in \mathbb{N}$.
 \section*{Solution B.1}
 Natural powers of odd numbers are odd and natural powers of even numbers are even. This is because raising a number to its power does not introduce/remove new factors of 2. Hence parity is retained. This applies to $2^{k}$-th powers too. \\
@@ -127,29 +127,29 @@ Hence proved, the difference between the numbers in this sequence is odd for all
 
 \newpage
 \section*{Problem B.2}
-Prove this identity between two infinite sums (with $x \in \mathbb{R}$ and $n !$ stands for factorial):
-$$
-\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)^{2}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}
-$$
+Prove this identity between two infinite sums (with $x \in \mathbb{R}$ and $n$! stands for factorial):
+\[
+{\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)}^{2}=\sum_{n=0}^{\infty} \frac{{(2 x)}^{n}}{n!}
+\]
 \section*{Solution B.2}
 We know the Taylor series expansion:
-\[e^{x}=\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n !}\right)\]
+\[e^{x}=\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)\]
 Squaring both sides we have,
-\[e^{2x}=\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n !}\right)^{2}\]
+\[e^{2x}={\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)}^{2}\]
 But by replacing $x$ with $2x$ in the original Taylor series expansion, we can write $e^{2x}$ as:
-\[e^{2x}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}\]
+\[e^{2x}=\sum_{n=0}^{\infty} \frac{{(2 x)}^{n}}{n!}\]
 Hence proved:
-\[\boxed{\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)^{2}=\sum_{n=0}^{\infty} \frac{(2 x)^{n}}{n!}}\]
+\[\boxed{{\left(\sum_{n=0}^{\infty} \frac{x^{n}}{n!}\right)}^{2}=\sum_{n=0}^{\infty} \frac{{(2 x)}^{n}}{n!}}\]
 
 \newpage
 \section*{Problem B.3}
 You have given a function $\lambda: \mathbb{R} \rightarrow \mathbb{R}$ with the following properties $(x \in \mathbb{R}, n \in \mathbb{N})$
-$$
+\[
 \lambda(n)=0, \quad \lambda(x+1)=\lambda(x), \quad \lambda\left(n+\frac{1}{2}\right)=1
-$$
+\]
 Find two functions $p, q: \mathbb{R} \rightarrow \mathbb{R}$ with $q(x) \neq 0$ for all $x$ such that $\lambda(x)=q(x)(p(x)+1)$
 \section*{Solution B.3}
-In this problem, we make use of the "Fractional Part Function" - \{x\}. \\
+In this problem, we make use of the `Fractional Part Function' --- \{x\}. \\
 We have $\lambda(n)=0$ and \{n\} = 0 (by definition of F.P.F). So let us designate $q(x)=\{x\}$. \\
 Next, we have $\lambda(x+1)=\lambda(x)$, this implies both $q(x)$ and $p(x)$ are purely composed of $\{x\}+c$ where $c$ is a numerical constant. We have already proved that in $q(x)$, $c=0$. \\
 We are given: $\lambda\left(n+\frac{1}{2}\right)=1$. We also know that, $\left\{n+\frac{1}{2}\right\}=\left\{\frac{1}{2}\right\}$. Hence:
@@ -163,7 +163,7 @@ We are given: $\lambda\left(n+\frac{1}{2}\right)=1$. We also know that, $\left\{
 
 \newpage
 \section*{Problem B.4}
-You have given an equal sided triangle with side length $a$. A straight line connects the center of the bottom side to the border of the triangle with an angle of $\alpha .$ Derive an expression for the enclosed area $A(\alpha)$ with respect to the angle (see drawing). \\
+You have given an equal sided triangle with side length $a$. A straight line connects the center of the bottom side to the border of the triangle with an angle of $\alpha$. Derive an expression for the enclosed area $A(\alpha)$ with respect to the angle (see drawing). \\
 \includegraphics[scale=0.166666]{IM1.png}
 \qquad
 \includegraphics[scale=0.166666]{IM2.png}
@@ -187,7 +187,7 @@ In $\Delta DEC$,
                 &= \frac{\sqrt{3}a \tan{\alpha}}{2(\sqrt{3}+\tan(\alpha))} \\
     \therefore Ar(\Delta DEC) (=\Delta = A(\alpha)) &= \frac{1}{2} \cdot \frac{a}{2} \cdot h \\
 \end{align*}
-$$\boxed{A(\alpha)=\frac{\sqrt{3} a^{2} \tan(\alpha)}{8 (\sqrt{3}+\tan(\alpha))}}$$
+\[\boxed{A(\alpha)=\frac{\sqrt{3} a^{2} \tan(\alpha)}{8 (\sqrt{3}+\tan(\alpha))}}\]
 Note: This result is valid only for $\ang{0} \leq \alpha < \ang{90}$.
 \subsection*{Case II}
 \begin{align*}
@@ -221,8 +221,92 @@ To sum up,
 \begin{dcases}
     \frac{\sqrt{3}a^2 \tan(\alpha)}{8(\sqrt{3}+\tan(\alpha))},           & \ang{0} \leq \alpha < \ang{90} \\
     \frac{\sqrt{3}a^2}{8},                                               & \alpha = \ang{90} \\
-    \frac{\sqrt{3}a^2(2\sqrt{3}-\tan(\alpha))}{8(\sqrt{3}-\tan(\alpha)}, & \ang{90} < \alpha \leq \ang{180}
+    \frac{\sqrt{3}a^2(2\sqrt{3}-\tan(\alpha))}{8(\sqrt{3}-\tan(\alpha))}, & \ang{90} < \alpha \leq \ang{180}
 \end{dcases}
 }
 \]
+
+\newpage
+\section*{Problem C.1}
+Let $\pi(N)$ be the number of primes less than or equal to $N$ (example: $\pi(100)=25$). The famous prime number theorem then states (with $\sim$ meaning asymptotically equal):
+\[
+\pi(N) \sim \frac{N}{\log (N)}
+\]
+Proving this theorem is very hard. However, we can derive a statistical form of the prime number theorem. For this, we consider random primes which are generated as follows:
+\medskip
+
+\noindent
+(i) Create a list of consecutive integers from 2 to $N$. \\
+(ii) Start with 2 and mark every number $>2$ with a probability of $\frac{1}{2}$. \\
+(iii) Let $n$ be the next non-marked number. Mark every number $>n$ with a probability of $\frac{1}{n}$. \\
+(iv) Repeat (iii) until you have reached $N$.
+\medskip
+
+\noindent
+All the non-marked numbers in the list are called random primes.
+\medskip
+
+\noindent
+(a) Let $q_{n}$ be the probability of $n$ being selected as a random prime during this algorithm. Find an expression for $q_{n}$ in terms of $q_{n-1}$. \\
+(b) Prove the following inequality of $q_{n}$ and $q_{n+1}$:
+\[
+\frac{1}{q_{n}}+\frac{1}{n}<\frac{1}{q_{n+1}}<\frac{1}{q_{n}}+\frac{1}{n-1}
+\]
+(c) Use the result from (b) to show this inequality:
+\[
+\sum_{k=1}^{N} \frac{1}{k}<\frac{1}{q_{N}}<\sum_{k=1}^{N} \frac{1}{k}+1
+\]
+(d) With this result, derive an asymptotic expression for $q_{n}$ in terms of $n$. \\
+(e) Let $\tilde{\pi}(N)$ be the number of random primes less than or equal to $N$. Use the result from $(\mathrm{d})$ to derive an asymptotic expression for $\tilde{\pi}(N)$ i.e. \ the prime number theorem for random primes.
+
+\section*{Solution C.1}
+\subsection*{(a)}
+Let, \\
+$U_{k}$ be the event of `k' being unmarked (or being selected as a random prime). \\
+$M_{k}$ be the event of `k' being marked.
+\medskip
+
+\noindent
+Clearly, either a number is marked or unmarked. So, $P(U_{k})+P(M_{k})=1$. \\
+Also, as per definition, $P(U_{k})=q_k$.
+\medskip
+
+\noindent
+Now, two cases are possible for `n'. Either `n-1' is marked, or it is unmarked. By the total probability theorem, we have:-
+\[P(U_{n})=q_n=P(U_{n-1})\cdot P\left(\frac{U_n}{U_{n-1}}\right)+P\left(M_{n-1}\right)\cdot P\left(\frac{U_n}{M_{n-1}}\right)\]
+Let's calculate each one of these one by one:-
+\begin{align*}
+    P(U_{n-1})&=q_{n-1} \\
+    P\left(\frac{U_n}{U_{n-1}}\right)&= \text{Probability of `n' being unmarked given `n-1' is unmarked} \\
+                          &= 1 - (\text{Probability of `n' being marked given `n-1' is unmarked}) \\
+                          &= \left(1-\frac{1}{n-1}\right)q_{n-1} \\
+                          &= \left(\frac{n-2}{n-1}\right)q_{n-1} \\
+    P(M_{n-1})&=1-P(U_{n-1}) \\
+              &= 1- q_{n-1} \\
+    P\left(\frac{U_{n}}{M_{n-1}}\right)&=\text{Probability of `n' being marked given `n-1' is marked} \\
+                                       &= q_{n-1}
+\end{align*}
+Plugging in these values,
+\begin{align*}
+q_{n} &= {\left(q_{n-1}\right)}^2\left(\frac{n-2}{n-1}\right) + \left(1-q_{n-1}\right)(q_{n-1})\\
+          &= q_{n-1}\left\{1-q_{n-1}\left(1-\frac{n-2}{n-1}\right)\right\}
+\end{align*}
+\[\boxed{q_n=q_{n-1}\left(1-\frac{q_{n-1}}{n-1}\right)}\]
+
+\subsection*{(b)}
+From (a),
+\begin{align*}
+    q_{n+1}&=q_n\left(1-\frac{q_n}{n}\right) \\
+    \frac{1}{q_{n+1}}&=\frac{1}{q_n} \cdot \left(\frac{n-q_{n}+q_{n}}{n-q_{n}}\right) \\
+                     &=\frac{1}{q_n}\left(1+\frac{q_n}{n-q_n}\right) \\
+                     &=\frac{1}{q_n} + \frac{1}{n-q_n}
+\end{align*}
+To prove:-
+\[\frac{1}{q_n} + \frac{1}{n}< \frac{1}{q_n} + \frac{1}{n-q_n} < \frac{1}{q_n} + \frac{1}{n-1}\]
+\[\frac{1}{n} < \frac{1}{n-q_n} < \frac{1}{n-1}\]
+\[n > n-q_n > n-1\]
+\[0<q_n<1\]
+Which is true (by definition) because $q_n$ is a probability. \\
+Hence proved,
+\[\boxed{\frac{1}{q_n} + \frac{1}{n} < \frac{1}{q_{n+1}} < \frac{1}{q_n} + \frac{1}{n-1}}\]
 \end{document}
